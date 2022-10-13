@@ -10,6 +10,21 @@
   grid-area: calcScreen;
 }
 
+.Body{
+width: 100%;
+text-align: center;
+}
+
+.Calc-link{
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.Button-class{
+  font-weight: bold;
+}
+
 .Grid-container {
   display: grid;
   grid-template-areas:
@@ -18,7 +33,7 @@
     'seven eight nine plusBtn'
     'four five six plusBtn'
     'one two three minusBtn'
-    'zer eqBtn eqBtn minusBtn';
+    'zer clearBtn eqBtn minusBtn';
   gap: 10px;
   background-color: #2196F3;
   padding: 10px;
@@ -31,6 +46,7 @@
   height: 400px;
   width: 400px;
   margin: 20px auto;
+  text-align: center;
 }
 
 .Boom{
@@ -41,6 +57,10 @@
 .Grid-container > button {
   background-color: #19191a;
   color: #2196F3;
+}
+
+.Clear-btn{
+  grid-area: clearBtn;
 }
 
 .Plus-btn{
