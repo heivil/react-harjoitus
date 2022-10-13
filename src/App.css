@@ -24,41 +24,31 @@
   padding: 10px;
   height: 100%;
   width: 25%;
+  margin: 20px auto;
 }
 
-.Number-btn{
+.Grid-container > button {
   background-color: #19191a;
   color: #2196F3;
-  grid-area: numBtn;
 }
 
 .Plus-btn{
-  background-color: #19191a;
-  color: #2196F3;
   grid-area: plusBtn;
 }
 
 .Minus-btn{
-  background-color: #19191a;
-  color: #2196F3;
   grid-area: minusBtn;
 }
 
 .Multi-btn{
-  background-color: #19191a;
-  color: #2196F3;
   grid-area: multiBtn;
 }
 
 .Division-btn{
-  background-color: #19191a;
-  color: #2196F3;
   grid-area: divBtn;
 }
 
 .Equals-btn{
-  background-color: #19191a;
-  color: #2196F3;
   grid-area: eqBtn;
 }
 
