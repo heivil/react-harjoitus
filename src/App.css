@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Calc-screen{
+  background-color: #454d5d;
+  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  grid-area: calcScreen;
 }
 
-.App-link {
-  color: #61dafb;
+.Grid-container {
+  display: grid;
+  grid-template-areas:
+    'calcScreen calcScreen calcScreen calcScreen'
+    'multiBtn multiBtn divBtn divBtn'
+    'seven eight nine plusBtn'
+    'four five six plusBtn'
+    'one two three minusBtn'
+    'zer eqBtn eqBtn minusBtn';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  height: 100%;
+  width: 25%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Number-btn{
+  background-color: #19191a;
+  color: #2196F3;
+  grid-area: numBtn;
+}
+
+.Plus-btn{
+  background-color: #19191a;
+  color: #2196F3;
+  grid-area: plusBtn;
+}
+
+.Minus-btn{
+  background-color: #19191a;
+  color: #2196F3;
+  grid-area: minusBtn;
+}
+
+.Multi-btn{
+  background-color: #19191a;
+  color: #2196F3;
+  grid-area: multiBtn;
+}
+
+.Division-btn{
+  background-color: #19191a;
+  color: #2196F3;
+  grid-area: divBtn;
+}
+
+.Equals-btn{
+  background-color: #19191a;
+  color: #2196F3;
+  grid-area: eqBtn;
+}
+
+.One{
+  grid-area: one;
+}
+
+.Two{
+  grid-area: two;
+}
+
+.Three{
+  grid-area: three;
+}
+
+.Four{
+  grid-area: four;
+}
+
+.Five{
+  grid-area: five;
+}
+
+.Six{
+  grid-area: six;
+}
+
+.Seven{
+  grid-area: seven;
+}
+
+.Eight{
+  grid-area: eight;
+}
+
+.Nine{
+  grid-area: nine;
+}
+
+.Zero{
+  grid-area: zer;
 }
