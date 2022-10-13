@@ -24,7 +24,6 @@ function App() {
       if(previousButton !== "+" && previousButton !== "-" && previousButton !== "*" && previousButton !== "/"){
           currentOperator = x
           setText(text+x)
-          previousNumber = ""
         }
     } else if(x === "C"){
         setResult(0)
