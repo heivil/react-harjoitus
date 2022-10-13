@@ -28,6 +28,9 @@ function App() {
     } else if(x === "C"){
         setResult(0)
         setText("")
+        previousNumber = ""
+        previousButton = ""
+        currentOperator = ""
     }else {
       //jos edellinen nappi oli operaattori voi uuden numeron laskea tulokseen
       if(previousButton === "+" || previousButton === "-" || previousButton === "*" || previousButton === "/"){
